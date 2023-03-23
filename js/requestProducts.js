@@ -2,7 +2,10 @@ const products = document.querySelector('.products');
 // console.log(products);
 
 const getProductData = async () => {
-  await fetch('../products.json')
+  // await fetch('../products.json')
+  await fetch(
+    'https://www.dabipyeung.com/soaply_backend/model/get_products.php?qnt=3'
+  )
     .then((response) => response.json())
     .then((data) => {
       let dataElmt;
