@@ -17,37 +17,24 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
   <!-- Main Stylesheet link -->
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="/vom13_toy_template/css/common.css">
+  <link rel="stylesheet" href="/vom13_toy_template/css/header.css">
+  <link rel="stylesheet" href="/vom13_toy_template/css/main.css">
+  <link rel="stylesheet" href="/vom13_toy_template/css/responsive.css">
 </head>
 <body>
   <div class="wrapper">
     <!-- Header -->
     <header id="header" class="header">
       <div class="container">
-        <nav class="nav-wrapper">
-          <ul class="nav-lists">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Gallery</a></li>
-          </ul>
-        </nav>
+  
+        <?php include $_SERVER['DOCUMENT_ROOT']."/vom13_toy_template/include/nav.php"; ?>
+
         <div class="logo">
-          <a href="#"><img src="images/logo.svg" alt="soaply"></a>
+          <a href="/vom13_toy_template/index.php"><img src="images/logo.svg" alt="soaply"></a>
         </div>
-        <ul class="info">
-          <li class="sns">
-            <ul>
-              <li><a href="#"><img src="images/sns-icon-1.svg" alt="instagram"></a></li>
-              <li><a href="#"><img src="images/sns-icon-2.svg" alt="facebook"></a></li>
-              <li><a href="#"><img src="images/sns-icon-3.svg" alt="pinterest"></a></li>
-            </ul>
-          </li>
-          <li class="cart"><a href="#"><i class="ri-shopping-cart-line"></i><em> (0) </em></a></li>
-          <li class="user"><a href="#"><i class="ri-user-fill"></i></a></li>
-        </ul>
+
+        <?php include $_SERVER['DOCUMENT_ROOT']."/vom13_toy_template/include/info.php"; ?>
 
         <div class="mobile-btn-wrapper">
           <div class="mobile-btn not-active">
@@ -262,32 +249,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer>
-      <div class="container">
-        <div class="footer-upper">
-          <div class="footer-logo">
-            <a href="#"><img src="images/logo.svg" alt=""></a>
-          </div>
-          <div class="footer-info">
-            <ul class="footer-nav">
-              <li><a href="#">ChangeLog</a></li>
-              <li><a href="#">Licencing</a></li>
-              <li><a href="#">Style Guide</a></li>
-            </ul>
-            <ul class="footer-sns">
-              <li><a href="#"><img src="images/sns-icon-1.svg" alt=""></a></li>
-              <li><a href="#"><img src="images/sns-icon-2.svg" alt=""></a></li>
-              <li><a href="#"><img src="images/sns-icon-3.svg" alt=""></a></li>
-            </ul>
-          </div>
-        </div>
-        <span class="footer-line"></span>
-        <div class="footer-lower">
-          <span class="footer-copy">&copy; Copyright 2023</span>
-          <span class="byline">Powered by <a href="#">MongProject - Develope By Marshall</a></span>
-        </div>
-      </div>
-    </footer>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/vom13_toy_template/include/footer.php"; ?>
 
     <div class="top-btn common-btn">
       <i class="ri-arrow-up-line"></i>
