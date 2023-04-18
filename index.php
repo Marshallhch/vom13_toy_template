@@ -27,7 +27,6 @@
     <!-- Header -->
     <header id="header" class="header">
       <div class="container">
-  
         <?php include $_SERVER['DOCUMENT_ROOT']."/vom13_toy_template/include/nav.php"; ?>
 
         <div class="logo">
@@ -43,6 +42,10 @@
             <span class="bar_line"></span>
           </div>
         </div>
+      </div>
+      <div class="mobile-menu">
+        <?php include $_SERVER['DOCUMENT_ROOT']."/vom13_toy_template/include/nav.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']."/vom13_toy_template/include/info.php"; ?>
       </div>
     </header>
 
